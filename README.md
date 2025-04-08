@@ -6,3 +6,6 @@ Welcome to my Github Actions course
 ### Actions:  
 - Actions provide a structured, reusable framework for complex business logic and integrations
 - "Checkout Action" 
+
+### Disable
+- disable unnessary workflows
