@@ -47,4 +47,7 @@ Welcome to my Github Actions course
 ### Matrix for jobs
 - Matrix strategy lets us use variables in a single job definition to automatically create multiple job runs that are based on the combinations of variables.
 - one job is enough
-- 
+- - - - Exclude: ensures certain os/runner from running a specific image
+- - - - Include: ensures to run a specific image on specific os/runner
+- - - - fail-fast: cancel failing jobs from linguring
+- - - - max-parallel: control number of jobs running at the same time
