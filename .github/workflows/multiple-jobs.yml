@@ -17,7 +17,7 @@ jobs:
         - name: upload Dragon text file
           uses: actions/upload-artifact@v4
           with:
-            name: upload-dragon-text-file
+            name: dragon-text-file
             path: dragon.txt
 
   test_job_2:
