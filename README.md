@@ -51,3 +51,7 @@ Welcome to my Github Actions course
 - - - - Include: ensures to run a specific image on specific os/runner
 - - - - fail-fast: cancel failing jobs from linguring
 - - - - max-parallel: control number of jobs running at the same time
+
+### Context
+- set of predefined objects
+- "if" keyword
