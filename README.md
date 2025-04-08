@@ -13,3 +13,7 @@ Welcome to my Github Actions course
 ### How to execute shell script
 
 # by default all job in a single workflow run parallelly
+- "needs": help us run jobs in sequence.
+
+### how to move artifacts from one job to another
+- 
