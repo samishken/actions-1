@@ -1,0 +1,38 @@
+name: multiple jobs
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build_job_1:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Install Cowsay Program
+          run: sudo apt-get install cowsay -y
+    
+        - name: execute cowsay CMD
+          run: cowsay -f dragon "Run for cover, I am a DRAGON...RAWR" >> dragon.txt
+    
+        - name: sleep for 30 seconds
+          run: sleep 30
+
+  test_job_2:
+    # needs: build_job_1
+    runs-on: ubuntu-latest
+    steps:
+      - name: sleep for 10 seconds
+        run: sleep 10
+
+      - name: test file exists
+        run: grep -i "dragon" dragon.txt
+
+  deploy_job_3:
+    # needs: test_job_2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read File
+        uses: cat dragon.txt
+
+      - name: Deploy application
+        run: echo "Deploying app..." # Replace with real deploy commands
