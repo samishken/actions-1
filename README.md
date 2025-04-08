@@ -24,3 +24,27 @@ Welcome to my Github Actions course
 - Variables defined inside a job applies to all steps inside that job.
 - `vars.DOCKER_USERNAME`: vars for variables
 - `secrets.DOCKER_PASSWORD`: secrets for secrets
+
+
+### Triggers 
+- "pull"
+- "cron jobs" (site: crontab.guru)
+- "workflow_dispatch:"    # manually trigger workflows
+
+
+### Concurrency
+- we don't want to deployments happening at the same time
+- concurrency takes two parameters: group and cancel-in-progress
+- "cancel-in-progress": 
+- - - - True: will cancel any running workflow and start running the new workflow
+- - - - False: will wait until running workflow completes before running new workflow
+
+### Timeouts
+- can be added at job or step level
+- protects workflows from running for unneccessary long time.
+- Example: `timeout-minutes: 1`
+
+### Matrix for jobs
+- Matrix strategy lets us use variables in a single job definition to automatically create multiple job runs that are based on the combinations of variables.
+- one job is enough
+- 
