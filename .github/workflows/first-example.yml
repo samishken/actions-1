@@ -6,18 +6,15 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-        - name: Welcome message
-          run: echo "My first Github actions job"
+        - name: checkout Repo
+          uses: actions/checkout@v4
         
         - name: Create File
-          run: touch text-file.txt
+          run: rm test.txt 
         
-        - name: add comment on the file
-          run:  echo "Hello World" > test.txt
-
-        - name: List Files
+        - name: Create File
           run: ls
 
         - name: Read File
-          run: cat test.txt
+          run: cat README.md
               
