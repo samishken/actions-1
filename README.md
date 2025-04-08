@@ -11,3 +11,5 @@ Welcome to my Github Actions course
 - disable unnessary workflows
 
 ### How to execute shell script
+
+# by default all job in a single workflow run parallelly
