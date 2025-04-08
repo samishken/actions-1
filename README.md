@@ -9,3 +9,5 @@ Welcome to my Github Actions course
 
 ### Disable
 - disable unnessary workflows
+
+### How to execute shell script
