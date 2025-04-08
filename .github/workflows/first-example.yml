@@ -14,10 +14,10 @@ jobs:
         
         - name: add comment on the file
           run:  echo "Hello World" > test.txt
-          
+
         - name: List Files
           run: ls
 
         - name: Read File
-          run: cat text-file.txt
+          run: cat text.txt
               
