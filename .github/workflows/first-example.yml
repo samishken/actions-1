@@ -8,10 +8,16 @@ jobs:
         steps:
         - name: Welcome message
           run: echo "My first Github actions job"
-
+        
+        - name: Create File
+          run: touch text-file.txt
+        
+        - name: add comment on the file
+          run:  echo "Hello World" > test.txt
+          
         - name: List Files
           run: ls
 
         - name: Read File
-          run: cat README.md
+          run: cat text-file.txt
               
