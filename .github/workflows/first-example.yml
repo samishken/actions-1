@@ -19,5 +19,5 @@ jobs:
           run: ls
 
         - name: Read File
-          run: cat text.txt
+          run: cat test.txt
               
