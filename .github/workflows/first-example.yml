@@ -10,9 +10,6 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Create File
-          run: rm test.txt 
-        
-        - name: Create File
           run: ls
 
         - name: Read File
