@@ -54,4 +54,16 @@ Welcome to my Github Actions course
 
 ### Context
 - set of predefined objects
-- "if" keyword
+
+### expressions
+- "if" keyword.  we can set up the "if" to run workflow only on main branch pull requests.
+
+### Event Filters and activity types
+- use different filtering methods to run only the desired branch
+- 
+
+### Cancelling and Skipping workflow
+- Example: skip running workflow when updating README.md
+- commit messages: `[skip ci]`, `[ci skip]`, `[no ci]`, `[skip actions]`, `[actions skip]` 
+- `skip-checks: true`
+- `skip-checks: true`
